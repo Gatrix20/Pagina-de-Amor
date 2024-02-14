@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amor Eterno</title>
+    <link rel="icon" href="corazon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffc0cb; /* Nuevo: Fondo rosa */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            background-color: #ff5e62;
+            color: #fff;
+            padding: 20px;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 15px; /* Nuevo: bordes redondeados */
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            color: #ff5e62;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        #slider {
+            max-width: 100%;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        #slider img {
+            width: 100%;
+            display: none;
+        }
+
+        audio {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        /* Nuevo: Estilos adicionales */
+        section h2 {
+            color: #ff5e62;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        section p.extra-message {
+            font-size: 1.2em;
+            font-style: italic;
+            color: #333;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Para Mi Amor</h1>
+    </header>
+
+    <section>
+        <h2>Mi bebe hermosa</h2>
+
+        <div id="slider">
+            <img src="imagen1.jpg" alt="Imagen 1 - Descripción">
+            <img src="imagen2.jpg" alt="Imagen 2 - Descripción">
+            <!-- Puedes agregar más imágenes al slider -->
+        </div>
+
+        <h2>Música Especial Para Ti</h2>
+
+        <audio controls>
+            <source src="Musica.mp3" type="audio/mp3">
+            Tu navegador no soporta la etiqueta de audio.
+        </audio>
+
+        <h2>Palabras Hermosas que vienen de mi corazon </h2>
+        <p>Querida Bitia, esta página está llena de recuerdos especiales que hemos compartido juntos. Cada imagen cuenta nuestra historia de amor.</p>
+
+        <p>A ti, mi amor eterno,<br>
+            Como las estrellas brillan en la noche,<br>
+            Tu luz ilumina mi vida con su resplandor.<br>
+            En cada momento, en cada instante,<br>
+            Mi corazón late al ritmo de tu amor constante.</p>
+
+        <p class="extra-message">En este Día del Amor y de la Amistad, quiero agradecerte por ser la razón de mi felicidad. Eres mi mayor alegría y mi amor eterno. Te amo más de lo que las palabras pueden expresar.</p>
+
+        
+
+    </section>
+
+
+    <script>
+        // Script para el slider de imágenes
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementById("slider").getElementsByTagName("img");
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slideIndex++;
+
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000);
+        }
+    </script>
+
+</body>
+
+</html>
